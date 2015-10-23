@@ -1,411 +1,691 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-	<body>
+  </head>
 
-		<div class="reveal">
+  <body>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+    <div class="reveal">
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-markdown>
+          <script type="text/template">
+              # Microservices
+              ## The Easy way
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+              <p>
+                <small>Created by <a href="http://hakim.se">Andrew Swerlick</a> / <a href="http://twitter.com/thirdthoughts">@thirdthoughts</a></small>
+              </p>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## What are Microservices?
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+            * Build systems of small composable parts
+            * Apps maintained by autonmous teams
+            * Interact through defined channels
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+            Note:
+            Micrsoservices are the idea that you break applications up into small composable parts,
+            and that each service is fully self contained and autonmous in terms of the data it manipulates,
+            the team that manages it, the way it get's deployed, and the codebase it uses.
+            Application interaction happens through defined, stable pathways.
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Why?
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+            <p class="fragment"> Scalability </p>
+            <p class="fragment"> Ease of mainteance </p>
+            <p class="fragment"> Explicit dependencies </p>
+            <p class="fragment"> Autonomous Teams </p>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+            Note:
+            Scalability, give example of order vs pricing, why its' harder to scale monoliths.
+            Ease of maintenance, explicit vs implicit dependencies.
+            Teams can behave autnmously. Basic idea is that smaller things are
+            easier to deal with. Extension of SRP and other SOLID programming concepts
+          </script>
+        </section>
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+        <section data-markdown>
+          <script type="text/template">
+            ## Microservices Concerns
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+            * Client Routing/Discovery <!-- .element: class="fragment" -->
+            * Common Client/Protool Concerns <!-- .element: class="fragment" -->
+            * Cross service communication <!-- .element: class="fragment" -->
+            * Deployment <!-- .element: class="fragment" -->
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+             Note:
+             As you might expect it means setting up some infrastructure
+             so that what is really a bunch of little apps still ensures an
+             integrated user experience, and that everything plays nicely.
+             In general there are 4 real concerns
+          </script>
+        </section>
+        <section>
+            <h2> Routing </h2>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+            How does a client get to the right service?
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+            <div  class="fragment fade-out"
+                  data-svg-fragment="svg/routing-direct.svg"
+                  style="position: absolute; left: 20%; top: 190px;"
+                  data-fragment-index="1">
+            </div>
+            <div  class="fragment fadein"
+                  data-svg-fragment="svg/routing-gateway.svg"
+                  style="position: absolute; left: 20%; top: 190px;"
+                  data-fragment-index="1">
+            </div>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+            <aside class="notes">
+              Api gateway takes client requests and ensure they go to the correct application.
+              Generally it's a webserver, with some sort of logic to map a url to an application and then proxy the content
+            </aside>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The hard way</h1>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
+            <div class="fragment" style="width: 50%">
+              Dedicated service discovery tools + webproxy
+            </div>
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              <div data-svg-fragment="svg/service-discovery.svg">
+                <a class="fragment" title="[id=layer_First]"></a>
+                <a class="fragment" title="[id=layer_Second]"></a>
+                <a class="fragment" title="[id=layer_Third]"></a>
+              </div>
+              Consul, Zookeeper, etc.
+            </div>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+            Note:
+            In enterprise scenarios companies will use dedicated service discovery
+            tools like consul and zookepper. Track multiple instances of the same server,
+            do health checks, load balancing, etc. These tools are hooked into the
+            webproxy through custom scripts, and the webrpoxy may even be load balanced itself
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            <div style="width: 45%">
+              <h3 style="text-align:left">Benefits</h3>
+              <ul>
+                <li>
+                   Load Balancing
+                </li>
+                <li>
+                  Complex routing scenarios
+                </li>
+              </ul>
+            </div>
+            <div class="fragment" style="width: 45%; position: absolute; top: 10%; left: 50%">
+              <h3 style="text-align:left">Drawbacks</h3>
+              <ul>
+                <li>
+                   Complex setup and maintenance
+                </li>
+              </ul>
+            </div>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The easy way</h1>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
+            <div class="fragment" style="width: 50%">
+              Docker + nginx + nginx-proxy
+            </div>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              <div data-svg-fragment="svg/nginx.svg">
+                <a class="fragment" title="[id=layer_First]"></a>
+                <a class="fragment" title="[id=layer_Second]"></a>
+                <a class="fragment" title="[id=layer_Third]"></a>
+              </div>
+            </div>
 
-    var nodes = document.querySelectorAll( selector );
+            Note:
+            Docker is containerization tech that can run multiple apps on a single server
+            in an isolated fashion. Nginx is a webserver. Docker nginx is a program that
+            runs in a docker container and builds dynamic config files for nginx based on running docker containers.
+            Basically we build a template for docker-nginx that will generate our nginx
+            config based on our running services.
+          </script>
+        </section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+        <section data-markdown>
+          <script type="text/template">
+            <div style="width: 45%">
+              <h3 style="text-align:left">Benefits</h3>
+              <ul>
+                <li>
+                   Easy setup
+                </li>
+                <li>
+                  All pieces required for our infrastructure anyways
+                </li>
+              </ul>
+            </div>
+            <div class="fragment" style="width: 45%; position: absolute; top: 10%; left: 50%">
+              <h3 style="text-align:left">Drawbacks</h3>
+              <ul>
+                <li>
+                   Single server
+                </li>
+                <li>
+                   Redeploy for each new service
+                </li>
+              </ul>
+            </div>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+            Note:
+            This setup is easy to put together, since it's a just s series of docker containers
+            and a single template for the dynamically generated configuration part.
+            All the components were already a required part of our infrastructure,
+            and don't require any additional apps or processes
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+            The main drawback is that you can't scale beyond a single server/single process
+            per application, but that's a huge problem for us, because we're not at that scale.
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Common Client Concerns
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+            <div class="fragment" style="position: relative; top: -30px">
+              HTTPS
+            </div>
+            <div class="fragment" style="position: relative; left: 120px">
+              Error Handling
+            </div>
+            <div class="fragment">
+              [pic handling these at api gateway]
+            </div>
+            <div class="fragment" style="position: relative; left: -320px ">
+              Authentication?
+            </div>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+            Note:
+            The next thing we'll look at are some common client concerns.
+            This is about how the client connects to a service, how errors are
+            handled, etc
+            1. Some of these, like HTTPS and error handling are easy, just handle
+            at the api gateway. There really isn't anything tricky or unique about
+            our approach there
+            2. What about Auth though?
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The hard way</h1>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+            <div class="fragment" style="width: 50%">
+              OAuth
+            </div>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              [pic of how this works]
+            </div>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+            Note:
+            One approach I've seen alot of companies reccomend is OAuth. If you aren't
+            familiar with OAuth, it's an authentication/delegation protocol used by
+            companies like twitter and facebook. If you've ever signed into a third party
+            web app using a "facebook", "twitter", or "google" login, you've used OAuth
+            It delegates authentication to another service, which then may choose to
+            share some data with the requesting app.
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            <div style="width: 45%">
+              <h3 style="text-align:left">Benefits</h3>
+              <ul>
+                <li>
+                   Allows an "app" ecosystem
+                </li>
+              </ul>
+            </div>
+            <div class="fragment" style="width: 45%; position: absolute; top: 10%; left: 50%">
+              <h3 style="text-align:left">Drawbacks</h3>
+              <ul>
+                <li>
+                   Complex setup
+                </li>
+                <li>
+                   Every app has to be oauth aware
+                </li>
+                <li>
+                  Every app has to know how to find the auth service
+                </li>
+                <li>
+                  Lots more cross service chatter
+                </li>
+              </ul>
+            </div>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+            Note:
+            This setup is easy to put together, since it's a just s series of docker containers
+            and a single template for the dynamically generated configuration part.
+            All the components were already a required part of our infrastructure,
+            and don't require any additional apps or processes
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+            The main drawback is that you can't scale beyond a single server/single process
+            per application, but that's a huge problem for us, because we're not at that scale.
+          </script>
+        </section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The easy way</h1>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+            <div class="fragment" style="width: 50%">
+              Signed cookies generated by the gateway
+            </div>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              [pic of how this works]
+            </div>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+            Note:
+            We go with a very different approach. Instead, all of our auth logic lives
+            at the api gateway. No auth in individual applications, just get user data in custom http headers
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+            1. On login we proxy credential request to an auth service
+            2. Auth service checks credentials and if good generates a simple json token
+            3. This json token is cryptographically signed with a secret key and then sent to the client
+            in the form of a cookie, or just a string.
+            4. The token is included for subsequent requests, the gateway decrypts the token.
+            5. If decryption is successfully, the gateway adds token data to http headers
+            6. If it fails, we give the user a 401.
+          </script>
+        </section>
 
-			</div>
+        <section data-markdown>
+          <script type="text/template">
+            <div style="width: 45%">
+              <h3 style="text-align:left">Benefits</h3>
+              <ul>
+                <li>
+                   We only hit the database on login, not on later requests
+                </li>
+                <li>
+                  Apps implement no auth logic. Devs don't have to worry about it.
+                </li>
+              </ul>
+            </div>
+            <div class="fragment" style="width: 45%; position: absolute; top: 10%; left: 50%">
+              <h3 style="text-align:left">Drawbacks</h3>
+              <ul>
+                <li>
+                   Any mobile apps have to be spefically written to store and manage the token
+                </li>
+              </ul>
+            </div>
 
-		</div>
+            Note:
+            This setup is easy to put together, since it's a just s series of docker containers
+            and a single template for the dynamically generated configuration part.
+            All the components were already a required part of our infrastructure,
+            and don't require any additional apps or processes
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+            The main drawback is that you can't scale beyond a single server/single process
+            per application, but that's a huge problem for us, because we're not at that scale.
+          </script>
+        </section>
 
-		<script>
+        <section data-markdown>
+          <script type="text/template">
+            ## Cross Service Communication
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+            How do services talk and share data?
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+            Note:
+            Next we're going to look at cross service communication, how do services talk a share data?
+          </script>
+        </section>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The ugly way</h1>
 
-		</script>
+            <div class="fragment" style="width: 50%">
+              Synchronous request/response
+            </div>
 
-	</body>
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              [pic of how this works]
+            </div>
+
+            Note:
+            We're going to break format here, and before I talk about the hard way, I'm going to
+            talk about the ugly way. This is a really common approach that's got alot of flaws,
+            and should really be avoided because of it's problems. That's synchronous request/response
+            usually over http. This is where service A sends Service B request on http, and then service B sends back data
+
+            Problems
+            1. Really tight coupling. Failure of 1 = failure of all Ex: Price management and ordering system.
+            2. Hard to trace where requests go, and which systems are hit
+            3. Hard to scale, since every service might be involved in every request
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Async
+
+            Data duplication over events <!-- .element: class="fragment" -->
+
+            No coupling <!-- .element: class="fragment" -->
+
+            Better traceability <!-- .element: class="fragment" -->
+
+            Better scalability <!-- .element: class="fragment" -->
+
+            Note:
+            If no sync, then what. After all that ordering application still needs the price data
+            It helps to think about how we handled this sort of stuff before computers
+            CSR taking orders over the phone. Wouldn't call up the sales person and ask the price
+            of every product while they're taking. Instead each CSR would have a list. If the price
+            changes, somebody distributes a new list. The CSR has everything he or she needs to <!DOCTYPE html>
+            their job, without having to request data from anyone else.
+
+            We can use the same model, and in fact it has a very computery sounding name. Data duplication over
+            events. In this model, everytime someone updates a price in the price management system,
+            we publish an event with data about the change. The online store listens for these events
+            and uses the data to update it's own cache of product prices.
+
+            This solves all the problems we outlined with synchronous communication.
+            How does this work? We'll talk about the hard way and then the easy way
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The hard way</h1>
+
+            <div class="fragment" style="width: 50%">
+              Dedicated event bus/messaging system
+            </div>
+
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              <p>Kafka</p><p>Rabbit MQ</p><p>Zero MQ</p><p>Etc.</p>
+            </div>
+
+            Note:
+            Dedicated system that only does event management/pub sub.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            <div style="width: 45%">
+              <h3 style="text-align:left">Benefits</h3>
+              <ul>
+                <li>
+                   Fault tolerant
+                </li>
+                <li>
+                  Optimized for high loads
+                </li>
+              </ul>
+            </div>
+            <div class="fragment" style="width: 45%; position: absolute; top: 10%; left: 50%">
+              <h3 style="text-align:left">Drawbacks</h3>
+              <ul>
+                <li>
+                   Another system to support and maintain
+                </li>
+                <li>
+                   Dual Writes
+                </li>
+              </ul>
+            </div>
+
+            Note:
+            This setup is easy to put together, since it's a just s series of docker containers
+            and a single template for the dynamically generated configuration part.
+            All the components were already a required part of our infrastructure,
+            and don't require any additional apps or processes
+
+            The main drawback is that you can't scale beyond a single server/single process
+            per application, but that's a huge problem for us, because we're not at that scale.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The easy way</h1>
+
+            <div class="fragment" style="width: 50%">
+              Database based message system
+            </div>
+
+            <div style="width: 50%; position: absolute; top: 10%; left:60%">
+              [insert pic]
+            </div>
+
+            Note:
+            What this means is that we have our pub sub messaging system built directly into a shared database
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## QueBus
+
+            [maybe add pic]
+            Built on top of background job library <!-- .element: class="fragment" -->
+
+            Add a subscribers table <!-- .element: class="fragment" -->
+
+            Publishing application loops through subscribers and queues up jobs <!-- .element: class="fragment" -->
+
+            Note:
+            We built a custom pub sub system that uses the database directly called QueBus
+            It may sound like alot, but it's mostly but on top of an existing background job library
+            explain background jobs
+            So on top of this background job library, we add a table of subscribers
+            Stores who is listening for what kind of events.
+            So when the price management app goes to publish a price changed event
+            it looks at the subscribers table, sees a row in there for the online store
+            and then queues up a background job for the online store.
+            The online store grabs this background job, and processes it, adding the price
+            change data to it's own database
+
+            Most of the heavy lifiting is this existing background job library
+
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            <div style="width: 45%">
+              <h3 style="text-align:left">Benefits</h3>
+              <ul>
+                <li>
+                   No new system, built into existing database
+                </li>
+                <li>
+                  No dual writes
+                </li>
+              </ul>
+            </div>
+            <div class="fragment" style="width: 45%; position: absolute; top: 10%; left: 50%">
+              <h3 style="text-align:left">Drawbacks</h3>
+              <ul>
+                <li>
+                   All apps share a database (mitigated by postgres schema)
+                </li>
+                <li>
+                   Logic for using the subscribers and jobs tables must be implemented in every app
+                </li>
+              </ul>
+            </div>
+
+            Note:
+            This setup is easy to put together, since it's a just s series of docker containers
+            and a single template for the dynamically generated configuration part.
+            All the components were already a required part of our infrastructure,
+            and don't require any additional apps or processes
+
+            The main drawback is that you can't scale beyond a single server/single process
+            per application, but that's a huge problem for us, because we're not at that scale.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Deployment
+
+            Autonomous teams = Automated deploys
+
+            Deploy on checkin
+
+            Note:
+            How does your code get into production. Remember one of the original goals was
+            autonomous teams. Autonomous teams need to be apply to deploy on their own
+            schedule, and without depending on other teams. That means automated deployment
+            Generally this means you build a Heroku like setup. If you aren't familar with
+            Heroku, the way you deploy code is by checking your latest code into a specific
+            git repository. From their an automated process takes over and publishes the code you checkin
+            Different branches or repositories are used for different environments
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The hard way</h1>
+
+            <div class="fragment" style="width: 50%">
+              Dedicated Build server
+            </div>
+
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              <p>Team City</p><p>Jenkins</p>
+            </div>
+
+            Note:
+            Standalone server/app for builds and deployments
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            <h1 style="width: 50%"> The easy way</h1>
+
+            <div class="fragment" style="width: 50%">
+              Cloud build services
+            </div>
+
+            <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
+              <p>Codeship</p><p>Drone.io</p><p>Travis CI</p>
+            </div>
+
+            Note:
+            In this case, the hard way and the easy way aren't too different. It's
+            mostly the same process just one uses the cloud versus setting up and configuring
+            a dedicated system. The cloud might cost a little more, but it gives you
+            convinence and ease of setup.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Summary
+
+            * Decomposed applications communicating asynchronous over pub sub model <!-- .element: class="fragment" -->
+
+            * Automated deployments via docker and ansible <!-- .element: class="fragment" -->
+
+            * Easy to add new features without being bogged down by weighty monolith <!-- .element: class="fragment" -->
+
+            * Easy to experiment with new approaches on seperate apps with minimal risk <!-- .element: class="fragment" -->
+
+            * Stuck on Ruby or have to re implement our job bus <!-- .element: class="fragment" -->
+
+            * Single server (but ready to scale without changing our apps) <!-- .element: class="fragment" -->
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            # THE END
+          </script>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/data-src-svg.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'js/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
