@@ -15,7 +15,7 @@
     preserveAspectRatio="none"
     id="svg2">
    <defs
-       id="defs_193683F7"/>
+       id="defs_6449C2D2"/>
    <metadata
        id="metadata7">
       <rdf:RDF>
@@ -29,6 +29,9 @@
    </metadata>
    <g
        id="layer_Paper"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:3;stroke-miterlimit:10"/>
+   <g
+       id="layer_first"
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:3;stroke-miterlimit:10">
       <rect
           style="fill:#8ECF7D;stroke:#8ECF7D"
@@ -38,21 +41,21 @@
           width="102.568959733"
           height="102.568959733"/>
       <rect
-          style="fill:#EBFFED;stroke:#8ECF7D"
+          style="fill:#616064;stroke:#8ECF7D"
           id="24ED36C7"
           x="27.572265625"
           y="50.091796875"
           width="44.5041891866"
           height="44.5041891866"/>
       <rect
-          style="fill:#EBFFED;stroke:#8ECF7D"
+          style="fill:#616064;stroke:#8ECF7D"
           id="D0D476C7"
           x="86.96875"
           y="30.33203125"
           width="55.2364353427"
           height="55.2364353427"/>
       <rect
-          style="fill:#EBFFED;stroke:#8ECF7D"
+          style="fill:#616064;stroke:#8ECF7D"
           id="F9BEB6C7"
           x="34.38671875"
           y="6.84375"
@@ -73,6 +76,28 @@
 C159.422221147,222.085247543 133.175607555,220.189120881 106.928993963,218.292994218 C108.716828691,213.833712487 110.504663419,209.374430756 112.292498147,204.915149025 C69.7097012152,187.842667904 27.1269042832,165.597560595 -34.4411505788,156.254695476
 C-29.0987308288,140.7456882 -25.6766948978,132.798176801 -23.2929152608,128.854270251"/>
       </g>
+      <text
+          id="09B8B0E7"
+          style="fill:#F4F3FF;stroke:none"
+          font-family="Helvetica"
+          font-size="18"
+          font-weight="normal"
+          font-style="normal">
+         <tspan x="9.16796875" y="119.1484375">Docker Containers</tspan>
+      </text>
+      <text
+          id="2FC5E2E7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="18"
+          font-weight="normal"
+          font-style="normal">
+         <tspan x="26.375" y="264.375">docker-gen</tspan>
+      </text>
+   </g>
+   <g
+       id="layer_second"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:3;stroke-miterlimit:10">
       <g id="E99809C7_transform" transform="matrix(0.222981521546,-0.1242924773,0.084418758519,0.338018874546,112.185975708,191.880294293)">
          <path
              style="fill:#D06647;stroke:#FB9B38"
@@ -82,10 +107,23 @@ C258.662064897,308.684466293 232.415451305,306.788339631 206.168837713,304.89221
 C70.141112921,227.34490695 73.563148852,219.397395551 75.946928489,215.453489001"/>
       </g>
       <path
-          style="fill:none;stroke:#616064"
+          style="fill:none;stroke:#F4F3FF"
           id="66A2BAC7"
           d="M292.098632812,208.484375 L207.48046875,208.484375 L207.48046875,315.58203125 L307.03125,315.58203125 L307.03125,223.416992188 L292.098632812,208.484375 L289.098632812,208.484375 L290.598632812,208.484375
 L290.598632812,223.416992188 L305.53125,223.416992188"/>
+      <text
+          id="A0C365E7"
+          style="fill:#F4F3FF;stroke:none"
+          font-family="Helvetica"
+          font-size="18"
+          font-weight="normal"
+          font-style="normal">
+         <tspan x="217.11328125" y="258.265625">nginx.conf</tspan>
+      </text>
+   </g>
+   <g
+       id="layer_third"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:3;stroke-miterlimit:10">
       <image
           style="fill:none;stroke:none"
           id="75E89AD7"
@@ -281,35 +319,8 @@ C339.964408647,218.908685043 313.717795055,217.012558381 287.471181463,215.11643
 C151.443456671,137.5691257 154.865492602,129.621614301 157.249272239,125.677707751"/>
       </g>
       <text
-          id="09B8B0E7"
-          style="fill:#616064;stroke:none"
-          font-family="Helvetica"
-          font-size="18"
-          font-weight="normal"
-          font-style="normal">
-         <tspan x="9.16796875" y="119.1484375">Docker Containers</tspan>
-      </text>
-      <text
-          id="2FC5E2E7"
-          style="stroke:none"
-          font-family="Helvetica"
-          font-size="18"
-          font-weight="normal"
-          font-style="normal">
-         <tspan x="26.375" y="264.375">docker-gen</tspan>
-      </text>
-      <text
-          id="A0C365E7"
-          style="fill:#616064;stroke:none"
-          font-family="Helvetica"
-          font-size="18"
-          font-weight="normal"
-          font-style="normal">
-         <tspan x="217.11328125" y="258.265625">nginx.conf</tspan>
-      </text>
-      <text
           id="B69067E7"
-          style="fill:#616064;stroke:none"
+          style="fill:#F4F3FF;stroke:none"
           font-family="Helvetica"
           font-size="18"
           font-weight="normal"

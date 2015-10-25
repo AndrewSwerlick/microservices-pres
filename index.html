@@ -178,9 +178,8 @@
 
             <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
               <div data-svg-fragment="svg/nginx.svg">
-                <a class="fragment" title="[id=layer_First]"></a>
-                <a class="fragment" title="[id=layer_Second]"></a>
-                <a class="fragment" title="[id=layer_Third]"></a>
+                <a class="fragment" title="[id=layer_second]"></a>
+                <a class="fragment" title="[id=layer_third]"></a>
               </div>
             </div>
 
@@ -232,18 +231,11 @@
           <script type="text/template">
             ## Common Client Concerns
 
-            <div class="fragment" style="position: relative; top: -30px">
-              HTTPS
-            </div>
-            <div class="fragment" style="position: relative; left: 120px">
-              Error Handling
-            </div>
-            <div class="fragment">
-              [pic handling these at api gateway]
-            </div>
-            <div class="fragment" style="position: relative; left: -320px ">
-              Authentication?
-            </div>
+              HTTPS<!-- .element: class="fragment" -->
+
+              Error Handling<!-- .element: class="fragment" -->
+
+              Authentication<!-- .element: class="fragment" -->
 
             Note:
             The next thing we'll look at are some common client concerns.
@@ -264,7 +256,12 @@
             </div>
 
             <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
-              [pic of how this works]
+              <div data-svg-fragment="svg/oauth.svg">
+                <a class="fragment" title="[id=layer_first]"></a>
+                <a class="fragment" title="[id=layer_second]"></a>
+                <a class="fragment" title="[id=layer_third]"></a>
+                <a class="fragment" title="[id=layer_fourth]"></a>
+              </div>
             </div>
 
             Note:
@@ -324,7 +321,12 @@
             </div>
 
             <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
-              [pic of how this works]
+              <div data-svg-fragment="svg/token.svg">
+                <a title="[id=layer_first]"></a>
+                <a class="fragment" title="[id=layer_second]"></a>
+                <a class="fragment" title="[id=layer_third]"></a>
+                <a class="fragment" title="[id=layer_fourth]"></a>
+              </div>
             </div>
 
             Note:
@@ -394,7 +396,12 @@
             </div>
 
             <div class="fragment" style="width: 50%; position: absolute; top: 10%; left:60%">
-              [pic of how this works]
+              <div data-svg-fragment="svg/sync.svg">
+                <a title="[id=layer_first]"></a>
+                <a class="fragment" title="[id=layer_second]"></a>
+                <a class="fragment" title="[id=layer_third]"></a>
+                <a class="fragment" title="[id=layer_fourth]"></a>
+              </div>
             </div>
 
             Note:
@@ -483,13 +490,7 @@
             </div>
 
             Note:
-            This setup is easy to put together, since it's a just s series of docker containers
-            and a single template for the dynamically generated configuration part.
-            All the components were already a required part of our infrastructure,
-            and don't require any additional apps or processes
 
-            The main drawback is that you can't scale beyond a single server/single process
-            per application, but that's a huge problem for us, because we're not at that scale.
           </script>
         </section>
 
@@ -501,10 +502,6 @@
               Database based message system
             </div>
 
-            <div style="width: 50%; position: absolute; top: 10%; left:60%">
-              [insert pic]
-            </div>
-
             Note:
             What this means is that we have our pub sub messaging system built directly into a shared database
           </script>
@@ -514,12 +511,19 @@
           <script type="text/template">
             ## QueBus
 
-            [maybe add pic]
             Built on top of background job library <!-- .element: class="fragment" -->
 
             Add a subscribers table <!-- .element: class="fragment" -->
 
             Publishing application loops through subscribers and queues up jobs <!-- .element: class="fragment" -->
+
+            <div class="fragment">
+              <div data-svg-fragment="svg/que-bus.svg">
+                <a title="[id=layer_first]"></a>
+                <a class="fragment" title="[id=layer_second]"></a>
+                <a class="fragment" title="[id=layer_third]"></a>
+              </div>
+            </div>
 
             Note:
             We built a custom pub sub system that uses the database directly called QueBus

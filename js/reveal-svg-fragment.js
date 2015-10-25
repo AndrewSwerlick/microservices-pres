@@ -78,6 +78,7 @@ THE SOFTWARE.
   // toggle a fragment
   // TODO: add hide
   api.toggle = function(fragment, item, show){
+    debugger
     if(!item.svg){ return; }
     var selector = fragment.attr(api.cfg("selector"));
     item.svg.selectAll(selector)
