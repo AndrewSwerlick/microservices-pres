@@ -12,7 +12,7 @@ var server    = http.createServer(app);
 io = io(server);
 
 var opts = {
-	port :      1947,
+	port :      process.env.PORT || 1947,
 	baseDir :   __dirname + '/../../'
 };
 
