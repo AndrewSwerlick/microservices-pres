@@ -247,10 +247,9 @@
 				}
 
 				// Update the note slides
-				currentSlide.contentWindow.postMessage( JSON.stringify({ method: 'setState', args: [ data.state ] }), '*' );
-				upcomingSlide.contentWindow.postMessage( JSON.stringify({ method: 'setState', args: [ data.state ] }), '*' );
+				//currentSlide.contentWindow.postMessage( JSON.stringify({ method: 'setState', args: [ data.state ] }), '*' );
+				//upcomingSlide.contentWindow.postMessage( JSON.stringify({ method: 'setState', args: [ data.state ] }), '*' );
 				upcomingSlide.contentWindow.postMessage( JSON.stringify({ method: 'next' }), '*' );
-
 			}
 
 			// Limit to max one state update per X ms
@@ -283,7 +282,7 @@
 				].join( '&' );
 
 				var currentURL = '/?' + params + '&postMessageEvents=true';
-				var upcomingURL = '/?' + params + '&controls=false';
+				var upcomingURL = '/?' + params + '&controls=false&upcoming=true';
 
 				currentSlide = document.createElement( 'iframe' );
 				currentSlide.setAttribute( 'width', 1280 );
@@ -393,6 +392,9 @@
 
 			}
 
+			function post(){
+				console.log("test")
+			}
 		})();
 		</script>
 

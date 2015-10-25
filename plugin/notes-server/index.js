@@ -28,7 +28,7 @@ io.on( 'connection', function( socket ) {
 
 });
 
-[ 'css', 'js', 'images', 'plugin', 'lib' ].forEach( function( dir ) {
+[ 'css', 'js', 'images', 'plugin', 'lib', 'svg' ].forEach( function( dir ) {
 	app.use( '/' + dir, staticDir( opts.baseDir + dir ) );
 });
 
