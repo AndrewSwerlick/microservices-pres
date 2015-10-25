@@ -248,7 +248,7 @@
 
 				// Update the note slides
 				//currentSlide.contentWindow.postMessage( JSON.stringify({ method: 'setState', args: [ data.state ] }), '*' );
-				//upcomingSlide.contentWindow.postMessage( JSON.stringify({ method: 'setState', args: [ data.state ] }), '*' );
+				upcomingSlide.contentWindow.postMessage( JSON.stringify({ method: 'setState', args: [ data.state ] }), '*' );
 				upcomingSlide.contentWindow.postMessage( JSON.stringify({ method: 'next' }), '*' );
 			}
 
@@ -281,7 +281,7 @@
 					'backgroundTransition=none'
 				].join( '&' );
 
-				var currentURL = '/?' + params + '&postMessageEvents=true';
+				var currentURL = '/?' + params + '&driver=true&socketId='+socketId+'&postMessageEvents=true';
 				var upcomingURL = '/?' + params + '&controls=false&upcoming=true';
 
 				currentSlide = document.createElement( 'iframe' );
