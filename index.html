@@ -49,6 +49,9 @@
               <p>
                 <small>Created by <a href="http://hakim.se">Andrew Swerlick</a> / <a href="http://twitter.com/thirdthoughts">@thirdthoughts</a></small>
               </p>
+
+              Note:
+              Straight to what are microservices
           </script>
         </section>
         <section data-markdown>
@@ -56,30 +59,31 @@
             ## What are Microservices?
 
             * Build systems of small composable parts
-            * Apps maintained by autonmous teams
             * Interact through defined channels
 
             Note:
-            Micrsoservices are the idea that you break applications up into small composable parts,
-            and that each service is fully self contained and autonmous in terms of the data it manipulates,
-            the team that manages it, the way it get's deployed, and the codebase it uses.
-            Application interaction happens through defined, stable pathways.
+            1. Small systems of composable parts
+            2. Each app has its own database/deployment etc.
+            3. interact through defined channels
           </script>
         </section>
         <section data-markdown>
           <script type="text/template">
             ## Why?
 
-            <p class="fragment"> Scalability </p>
             <p class="fragment"> Ease of mainteance </p>
-            <p class="fragment"> Explicit dependencies </p>
+            <p class="fragment"> Scalability </p>
             <p class="fragment"> Autonomous Teams </p>
 
             Note:
-            Scalability, give example of order vs pricing, why its' harder to scale monoliths.
-            Ease of maintenance, explicit vs implicit dependencies.
-            Teams can behave autnmously. Basic idea is that smaller things are
-            easier to deal with. Extension of SRP and other SOLID programming concepts
+            1. Start with why Herrmann is interested
+              a. Have a bunch of apps/potential apps with different purposes
+              b. Didn't want all of this sharing a single hard to managment monolith
+              c. Transition to general explanation
+            1. Ease of maintenance - Each app has it's own database and smaller codebase
+            2. Scalability, give example of order vs pricing, why its' harder to scale monoliths.
+              Say it's not our primary concern
+            3. Teams can behave autonmously. 
           </script>
         </section>
 
