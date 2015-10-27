@@ -83,7 +83,7 @@
             1. Ease of maintenance - Each app has it's own database and smaller codebase
             2. Scalability, give example of order vs pricing, why its' harder to scale monoliths.
               Say it's not our primary concern
-            3. Teams can behave autonmously. 
+            3. Teams can behave autonmously.
           </script>
         </section>
 
@@ -237,9 +237,9 @@
 
               HTTPS<!-- .element: class="fragment" -->
 
-              Error Handling<!-- .element: class="fragment" -->
-
               Authentication<!-- .element: class="fragment" -->
+
+              Error Handling<!-- .element: class="fragment" -->
 
             Note:
             The next thing we'll look at are some common client concerns.
@@ -590,6 +590,8 @@
 
             Deploy on checkin
 
+            Isolated apps
+
             Note:
             How does your code get into production. Remember one of the original goals was
             autonomous teams. Autonomous teams need to be apply to deploy on their own
@@ -642,17 +644,17 @@
           <script type="text/template">
             ## Summary
 
-            * Decomposed applications communicating asynchronous over pub sub model <!-- .element: class="fragment" -->
+            * Small applications that talk asynchronously  <!-- .element: class="fragment" -->
 
-            * Automated deployments via docker and ansible <!-- .element: class="fragment" -->
+            * Automated deployments tied to source control  <!-- .element: class="fragment" -->
 
-            * Easy to add new features without being bogged down by weighty monolith <!-- .element: class="fragment" -->
+            * Easy to add new features via seperate apps  <!-- .element: class="fragment" -->
 
-            * Easy to experiment with new approaches on seperate apps with minimal risk <!-- .element: class="fragment" -->
+            * Easy to experiment with different approachs from app to app  <!-- .element: class="fragment" -->
 
-            * Stuck on Ruby or have to re implement our job bus <!-- .element: class="fragment" -->
+            * Single server, but ready to scale with minimal app changes  <!-- .element: class="fragment" -->
 
-            * Single server (but ready to scale without changing our apps) <!-- .element: class="fragment" -->
+            * Single database but ready to scale with minimal app changes <!-- .element: class="fragment" -->
           </script>
         </section>
 
